@@ -1,7 +1,3 @@
-library(rstan)
-library(parallel)
-library(tidyverse)
-library(abind)
 #----Define Prior Parameters----
 # CAUTION: Assumes Beta Prior
 

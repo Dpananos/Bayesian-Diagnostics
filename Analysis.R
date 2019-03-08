@@ -33,7 +33,7 @@ vars = o.draws$key
 o.draws = o.draws %>% select(-key, -iteration)
 for.monitoring = split(o.draws, vars )
 monitor.me = abind(for.monitoring, along = 3)
-monitor(monitor.me, warmup = 1000, digits_summary = 2, probs = c(0.5,0.025, 0.975))
+monitor(monitor.me, warmup = 1000, digits_summary = 2, probs = c(0.025, 0.975))
 
 draws %>% 
   ggplot(aes(pi))+
